@@ -1,22 +1,23 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Vitesse class is a class which represents the Speed  system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Vitesse {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-			//Attributs	
+			//These attributs represent its units, they are private and in type String	
 		
 			private String kmph;
 			private String mps;
 			private String milesph;
 			private ArrayList<String> liste_vitesse_unites;
 			
-			//Constructeur
+			//This constructor allows to initialized all the attributs
 			
 			public Vitesse(String kmph,String mps,String milesph){
 				this.kmph=kmph;
@@ -24,12 +25,14 @@ public class Vitesse {
 				this.milesph=milesph;
 			}
 		
+			//This constructor allows to initialized the list liste_vitesse_unite and the method ajouterVitesseUnite()
+		
 			public Vitesse() {
 				liste_vitesse_unites=new ArrayList<String>();	
 				ajouterVitesseeUnites();
 			}
 			
-			//Getters & setters
+			//Getters & setters for all attributs
 			
 			public String getKmph() {
 				return kmph;
@@ -63,7 +66,7 @@ public class Vitesse {
 				this.liste_vitesse_unites = liste_vitesse_unites;
 			}
 			
-			//M�thode ajouter une unit� de la vitesse dans la liste pour l'affichage
+			//Method to add some examples of units in type String in the list
 			
 			public void ajouterVitesseeUnites(){
 				liste_vitesse_unites.add("Kmph");
@@ -72,7 +75,7 @@ public class Vitesse {
 				
 				}
 			
-			//M�thode afficher les unit�s de vitesse
+			//Method to print on screen all units added in the list 
 			
 			public StringBuffer afficherUnitesVitesse(){
 				StringBuffer type=new StringBuffer();
