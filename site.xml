@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/DECORATION/1.4.0 http://maven.apache.org/xsd/decoration-1.4.0.xsd"
+name="TpUml">
+    <bannerLeft>
+        <name>Software for units conversion</name>
+    </bannerLeft>
+    <body>
+       <menu name="Maven 2.0">
+            <item name="Introduction" href="index.html"/>
+            <item name="Download" href="download.html"/>
+            <item name="Release Notes" href="release-notes.html"/>
+            <item name="General Information" href="about.html"/>
+            <item name="For Maven 1.x Users" href="maven1.html"/>
+            <item name="Road Map" href="roadmap.html"/>
+        </menu>
+        <menu ref="reports"/>
+	<footer>Powered by GitHub.com </footer>
+    </body>
+</project>
