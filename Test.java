@@ -1,12 +1,12 @@
+/**
+* The Test class is a class which allows to execute the program
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Test {
 
-				/**
-				 * @param args
-				 * @author Nabil HACHEM
-				 * @version 2.0
-			         * @since 2014-04-18
-				 */
-	 */
 	public static void main(String[] args) {
 		
 		/*********************************************M�trique***********************************************************/
