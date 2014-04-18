@@ -1,13 +1,13 @@
+/**
+* The Formule class is a class which contains some methods represent formulas to convert
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Formule {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-	
-			//Attributs	
+			//These attributs are the instances of classes represent the system	
 	
 			static private Metrique met;
 			static private Finance fin;
@@ -20,7 +20,7 @@ public class Formule {
 			static private Byte b;
 			
 			
-			//Constructeurs
+			//These attributs allows to initialize the instances of classes represent the system
 			
 			public Formule(){
 				 met=new Metrique("km","hm","dam","m","dm","cm","mm");
@@ -35,7 +35,7 @@ public class Formule {
 				
 			}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par un
+			//Method allows to compare units and multiply by 1
 			
 			public static double multiplierUniteParUn(String unite_depart, String unite_arrivee, double val){
 				if((unite_depart.equalsIgnoreCase(v.getDm3()) && unite_arrivee.equalsIgnoreCase(v.getL())) || (unite_depart.equalsIgnoreCase(v.getCm3()) && unite_arrivee.equalsIgnoreCase(v.getL())) || (unite_depart.equalsIgnoreCase(v.getL()) && unite_arrivee.equalsIgnoreCase(v.getDm3())) ||(unite_depart.equalsIgnoreCase(v.getMl()) && unite_arrivee.equalsIgnoreCase(v.getCm3()))
@@ -57,7 +57,7 @@ public class Formule {
 			
 			}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par dix
+			//Method allows to compare units and multiply by 10
 			
 			
 			public static double multiplierUniteParDix(String unite_depart, String unite_arrivee, double val){
@@ -77,7 +77,7 @@ public class Formule {
 			
 			}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par mille
+			//Method allows to compare units and multiply by 1000
 			
 			public static float multiplierUniteParMille(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(p.getTonne()) && unite_arrivee.equalsIgnoreCase(p.getKg())) || (unite_depart.equalsIgnoreCase(p.getQuintal()) && unite_arrivee.equalsIgnoreCase(p.getDag())) || (unite_depart.equalsIgnoreCase(p.getKg()) && unite_arrivee.equalsIgnoreCase(p.getG())) || (unite_depart.equalsIgnoreCase(p.getHg()) && unite_arrivee.equalsIgnoreCase(p.getDg())) || (unite_depart.equalsIgnoreCase(p.getDag()) && unite_arrivee.equalsIgnoreCase(p.getCg())) || (unite_depart.equalsIgnoreCase(p.getG()) && unite_arrivee.equalsIgnoreCase(p.getMg())) 
@@ -91,7 +91,7 @@ public class Formule {
 					return val;
 			}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par cent
+			//Method allows to compare units and multiply by 100
 			
 			public static float multiplierUniteParCent(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(p.getTonne()) && unite_arrivee.equalsIgnoreCase(p.getKg())) || (unite_depart.equalsIgnoreCase(p.getQuintal()) && unite_arrivee.equalsIgnoreCase(p.getHg())) || (unite_depart.equalsIgnoreCase(p.getKg()) && unite_arrivee.equalsIgnoreCase(p.getDag())) || (unite_depart.equalsIgnoreCase(p.getHg()) && unite_arrivee.equalsIgnoreCase(p.getG())) || (unite_depart.equalsIgnoreCase(p.getDag()) && unite_arrivee.equalsIgnoreCase(p.getDg())) || (unite_depart.equalsIgnoreCase(p.getG()) && unite_arrivee.equalsIgnoreCase(p.getCg())) || (unite_depart.equalsIgnoreCase(p.getDg()) && unite_arrivee.equalsIgnoreCase(p.getMg()))
@@ -106,7 +106,7 @@ public class Formule {
 						
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par dix mille
+			//Method allows to compare units and multiply by 10000
 			
 			public static float multiplierUniteParDixMille(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(p.getTonne()) && unite_arrivee.equalsIgnoreCase(p.getDag())) || (unite_depart.equalsIgnoreCase(p.getQuintal()) && unite_arrivee.equalsIgnoreCase(p.getG())) || (unite_depart.equalsIgnoreCase(p.getKg()) && unite_arrivee.equalsIgnoreCase(p.getDg())) || (unite_depart.equalsIgnoreCase(p.getHg()) && unite_arrivee.equalsIgnoreCase(p.getCg())) || (unite_depart.equalsIgnoreCase(p.getDag()) && unite_arrivee.equalsIgnoreCase(p.getMg())) 
@@ -121,7 +121,7 @@ public class Formule {
 						return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par cent mille
+			//Method allows to compare units and multiply by 100000
 			
 			public float multiplierUniteParCentMille(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(p.getTonne()) && unite_arrivee.equalsIgnoreCase(p.getG())) || (unite_depart.equalsIgnoreCase(p.getQuintal()) && unite_arrivee.equalsIgnoreCase(p.getDg())) || (unite_depart.equalsIgnoreCase(p.getKg()) && unite_arrivee.equalsIgnoreCase(p.getCg())) || (unite_depart.equalsIgnoreCase(p.getHg()) && unite_arrivee.equalsIgnoreCase(p.getMg()))  
@@ -134,7 +134,7 @@ public class Formule {
 						return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par un million
+			//Method allows to compare units and multiply by 1000000
 			
 			public float multiplierUniteParUnMillion(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(p.getTonne()) && unite_arrivee.equalsIgnoreCase(p.getDg())) || (unite_depart.equalsIgnoreCase(p.getQuintal()) && unite_arrivee.equalsIgnoreCase(p.getCg())) || (unite_depart.equalsIgnoreCase(p.getKg()) && unite_arrivee.equalsIgnoreCase(p.getMg()))  
@@ -148,7 +148,7 @@ public class Formule {
 						return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par dix million
+			//Method allows to compare units and multiply by 10000000
 			
 			public static float multiplierUniteParDixMillion(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart.equalsIgnoreCase(s.getKm2()) && unite_arrivee.equalsIgnoreCase(s.getDm2() ))) 
@@ -159,7 +159,7 @@ public class Formule {
 						return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par cent million
+			//Method allows to compare units and multiply by 100000000
 			
 			public float multiplierUniteParCentMillion(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart==s.getKm2() && unite_arrivee==s.getCm2() )||(unite_depart==s.getHm2() && unite_arrivee==s.getCm2())||(unite_depart==s.getDam2() && unite_arrivee==s.getMm2())) 
@@ -169,7 +169,7 @@ public class Formule {
 					}
 						return val;
 				}
-			//M�thode permettant d'abord de comparer et ensuite de multiplier les unit�s par un milliard
+			//Method allows to compare units and multiply by 1000000000
 		
 			public static float multiplierUniteParUnMilliard(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart==s.getKm2() && unite_arrivee==s.getMm2() )) 
@@ -180,7 +180,7 @@ public class Formule {
 						return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par un
+			//Method allows to compare units and divide by 1
 				
 			public float diviserUniteParUn(String unite_depart, String unite_arrivee, float val){
 				if((unite_depart==v.getL() && unite_arrivee==v.getDm3()) || (unite_depart==v.getL() && unite_arrivee==v.getM3()) ||(unite_depart==v.getL() && unite_arrivee==v.getCm3()) ||(unite_depart==v.getCm3() && unite_arrivee==v.getDm3()) ||(unite_depart==v.getCm3() && unite_arrivee==v.getL())||(unite_depart==v.getMl() && unite_arrivee==v.getDm3())||(unite_depart==v.getMl() && unite_arrivee==v.getL())) 
@@ -192,7 +192,7 @@ public class Formule {
 					return val;
 				}
 			
-			//M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par dix
+			//Method allows to compare units and divide by 10
 			
 		   public static float diviserUniteParDix(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getCg()) || (unite_depart==p.getCg() && unite_arrivee==p.getDg()) || (unite_depart==p.getDg() && unite_arrivee==p.getG()) || (unite_depart==p.getG() && unite_arrivee==p.getDag()) || (unite_depart==p.getDag() && unite_arrivee==p.getHg()) || (unite_depart==p.getHg() && unite_arrivee==p.getKg()) || (unite_depart==p.getKg() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getQuintal() && unite_arrivee==p.getTonne())
@@ -206,7 +206,7 @@ public class Formule {
 				return val;
 		   		}
 		   
-		     //M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par cent
+		   //Method allows to compare units and divide by 100
 		   
 		   public float diviserUniteParCent(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getDg()) || (unite_depart==p.getCg() && unite_arrivee==p.getG()) || (unite_depart==p.getDg() && unite_arrivee==p.getDag()) || (unite_depart==p.getG() && unite_arrivee==p.getHg()) || (unite_depart==p.getDag() && unite_arrivee==p.getKg()) || (unite_depart==p.getHg() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getKg() && unite_arrivee==p.getTonne()) 
@@ -220,7 +220,7 @@ public class Formule {
 			   
 		   		}
 			
-		   	  //M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par mille
+		   	  //Method allows to compare units and divide by 1000
 		   
 		   public static float diviserUniteParMille(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getG()) || (unite_depart==p.getCg() && unite_arrivee==p.getDag()) || (unite_depart==p.getDg() && unite_arrivee==p.getHg()) || (unite_depart==p.getG() && unite_arrivee==p.getKg()) || (unite_depart==p.getDag() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getHg() && unite_arrivee==p.getTonne())  
@@ -234,7 +234,7 @@ public class Formule {
 				return val;
 		   		}
 		   
-		       //M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par dix mille
+		      //Method allows to compare units and divide by 10000
 		   
 		   public float diviserUniteParDixMille(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getDag()) || (unite_depart==p.getCg() && unite_arrivee==p.getHg()) || (unite_depart==p.getDg() && unite_arrivee==p.getKg()) || (unite_depart==p.getG() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getDag() && unite_arrivee==p.getTonne())   
@@ -248,7 +248,7 @@ public class Formule {
 			   
 		   	    }
 		   
-		       //M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par cent mille
+		     //Method allows to compare units and divide by 100000
 		   
 		   public static float diviserUniteParCentMille(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getHg()) || (unite_depart==p.getCg() && unite_arrivee==p.getKg()) || (unite_depart==p.getDg() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getG() && unite_arrivee==p.getTonne())    
@@ -261,7 +261,7 @@ public class Formule {
 				return val;	   
 		   	    }
 		   
-		   	    //M�thode permettant d'abord de comparer et ensuite de diviser les unit�s par un million	
+		   	    //Method allows to compare units and divide by 1000000	
 		   
 		   public static float diviserUniteParUnMillion(String unite_depart, String unite_arrivee, float val){
 			   if((unite_depart==p.getMg() && unite_arrivee==p.getKg()) || (unite_depart==p.getCg() && unite_arrivee==p.getQuintal()) || (unite_depart==p.getDg() && unite_arrivee==p.getTonne())     
@@ -274,7 +274,7 @@ public class Formule {
 				return val;
 				}
 		   
-		   		//M�thode permettant d'abord de comparer et ensuite de convertir l'euro avec d'autres devises 
+		   		//Method allows to compare euro and then convert with other currencies
 		   
 		   public static double euro(String unite_depart, String unite_arrivee, double val){
 			   double taux_echange=0;
@@ -304,7 +304,7 @@ public class Formule {
 			   				return val;
 			     }
 		   
-		   		//M�thode permettant d'abord de comparer et ensuite de convertir le dollar avec d'autres devises
+		   		//Method allows to compare dollar and then convert with other currencies
 		   
 		   public static double dollar(String unite_depart, String unite_arrivee, double val){
 			   double taux_echange=0;
@@ -333,7 +333,7 @@ public class Formule {
 			   				return val;
 		   		  }
 			   
-		          //M�thode permettant d'abord de comparer et ensuite de convertir le pound avec d'autres devises
+		          //Method allows to compare pound and then convert with other currencies
 			
 		   public static double Pound(String unite_depart, String unite_arrivee, double val){
 			   double taux_echange=0;
@@ -363,7 +363,7 @@ public class Formule {
 							return val;
 			     }
 		   
-		   		//M�thode permettant d'abord de comparer et ensuite de convertir le yen avec d'autres devises
+		   	//Method allows to compare yen and then convert with other currencies
 		   
 		   public static double Yen(String unite_depart, String unite_arrivee, double val){
 			   double taux_echange=0;
@@ -393,8 +393,8 @@ public class Formule {
 			   				return val;
 			     }
 		   
-		   		//M�thode permettant d'abord de comparer et ensuite de convertir l'heure avec d'autres unit�s du temps
-		   
+		   		//Method allows to compare hours and then convert with unit of time
+		   		
 		   public static double heure(String unite_depart, String unite_arrivee, double val){
 			  
 			   		if(unite_depart==t.getHeure() && unite_arrivee==t.getMinute())
@@ -443,7 +443,7 @@ public class Formule {
 			   				
 		   			}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le minute avec d'autres unit�s du temps
+		  	//Method allows to compare minute and then convert with unit of time 
 		   
 		   public static double minute(String unite_depart, String unite_arrivee, double val){
 			  
@@ -485,7 +485,7 @@ public class Formule {
 		
 		   			}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le kilom�tre par heure avec d'autres unit�s de vitesse
+		   			//Method allows to compare kilometer per hour and then convert with units of speed
 		   
 		   public static double kmph(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==vit.getKmph() && unite_arrivee==vit.getMps())
@@ -504,7 +504,7 @@ public class Formule {
 			
 		   			}
 		   
-		            //M�thode permettant d'abord de comparer et ensuite de convertir le m�tre par secondes avec d'autres unit�s de vitesse
+		            //Method allows to compare meter per hour and then convert with units of speed
 		   
 		   public static double mps(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==vit.getMps() && unite_arrivee==vit.getKmph())
@@ -523,7 +523,7 @@ public class Formule {
 		
 		   			}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le mille par heure avec d'autres unit�s de vitesse
+		   		//Method allows to compare mile per hour and then convert with unit of speed
 		   
 		   public static double milesph(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==vit.getMilesph() && unite_arrivee==vit.getKmph())
@@ -542,7 +542,7 @@ public class Formule {
 			
 		   			}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le celsius avec d'autres unit�s de temp�rature
+		   			//Method allows to compare celsius and then convert with units of temperature
 		   
 		   public static double celsius(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==temp.getCelsius() && unite_arrivee==temp.getKelvin())
@@ -560,7 +560,7 @@ public class Formule {
 			   				return val;
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le kelvin avec d'autres unit�s de temp�rature
+		   			//Method allows to compare kelvin and then convert with units of temperature
 		   
 		   
 		   public static double kelvin(String unite_depart, String unite_arrivee, double val){
@@ -579,7 +579,7 @@ public class Formule {
 				   			return val;
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le newton avec d'autres unit�s de temp�rature
+		   		//Method allows to compare newton and then convert with units of temperature
 		   
 		   public static double newton(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==temp.getNewton() && unite_arrivee==temp.getCelsius())
@@ -597,7 +597,7 @@ public class Formule {
 				   			return val;
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le bit avec d'autres unit�s de Byte
+		   		//Method allows to compare bit  and then convert with units of Data Byte
 		   
 		   public static double bit(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==b.getBit() && unite_arrivee==b.getOctet())
@@ -609,7 +609,7 @@ public class Formule {
 			 
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir l'octet avec d'autres unit�s de Byte
+		   		//Method allows to compare octet  and then convert with units of Data Byte
 		   
 		   
 		   public static double octet(String unite_depart, String unite_arrivee, double val){
@@ -621,7 +621,7 @@ public class Formule {
 			   				return val; 
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le kilooctet avec d'autres unit�s de Byte
+		   			//Method allows to compare ko and then convert with units of Data Byte
 		   
 		   public static double ko(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==b.getKo() && unite_arrivee==b.getBit())
@@ -638,7 +638,7 @@ public class Formule {
 			   				return val;
 			   		}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le m�gaoctet avec d'autres unit�s de Byte
+		   			//Method allows to compare mo and then convert with units of Data Byte
 		   
 		   public static double mo(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==b.getMo() && unite_arrivee==b.getBit())
@@ -663,7 +663,7 @@ public class Formule {
 			   				return val;
 					}
 		   
-		   			//M�thode permettant d'abord de comparer et ensuite de convertir le gigaoctet avec d'autres unit�s de Byte
+		   			//Method allows to compare go and then convert with units of Data Byte
 		   
 		   public static double go(String unite_depart, String unite_arrivee, double val){
 			   		if(unite_depart==b.getGo() && unite_arrivee==b.getBit())
