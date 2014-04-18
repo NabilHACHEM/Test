@@ -1,17 +1,20 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Byte class is a class which represents the Byte Data system in informatic 
+* @author  Nabil HACHEM
+* @version 2.0
+* @since   2014-04-18
+*/
+
 public class Byte {
 			
-			/**
-			@author  Nabil HACHEM
-			@version 2.0
- 			@since   2014-04-18
-			*/
+		
 		
 	
 	
-			//Attributs	
+			//These attributs represent its units, they are private and in type String	
 			
 			private String bit;
 			private String octet;
@@ -20,7 +23,7 @@ public class Byte {
 			private String go;
 			private ArrayList<String> liste_byte_unite;
 			
-			//Constructeur
+			//This constructor allows to initialized all the attributs
 			
 			public Byte(String bit,String octet,String ko,String mo,String go){
 				this.bit=bit;
@@ -30,12 +33,14 @@ public class Byte {
 				this.go=go;
 			}
 			
+			//This constructor allows to initialized the list liste_byte_unite and the method ajouterByteUnite
+			
 			public Byte() {
 				liste_byte_unite= new ArrayList<String>();
 				ajouterByteUnites();
 			}
 			
-			//Getters & setters
+			//Getters & setters for all attributs
 		
 			public String getBit() {
 				return bit;
@@ -85,7 +90,7 @@ public class Byte {
 				this.liste_byte_unite = liste_byte_unite;
 			}
 			
-			//M�thode ajouter une unit� de Byte dans la liste pour l'affichage
+			//Method to add some examples of units in type String in the list 
 			
 			public void ajouterByteUnites(){
 				liste_byte_unite.add("Bit");
@@ -96,7 +101,7 @@ public class Byte {
 				
 				}
 				
-			//M�thode afficher les unit�s de Byte 
+			//Method to print on screen all units added in the list 
 			
 			public StringBuffer afficherUnitesByte(){
 				StringBuffer type=new StringBuffer();
