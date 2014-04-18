@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Superficie class is a class which represents the Area system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Superficie {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
+			
 	
-			//Attributs
+			//These attributs represent its units, they are private and in type String
 			
 			private String km2;
 			private String hm2;
@@ -20,7 +23,7 @@ public class Superficie {
 			private String mm2;
 			private ArrayList<String> liste_superficie_unites;
 			
-			//Constructeur
+			//This constructor allows to initialized all the attributs
 			
 			public Superficie(String km2,String hm2,String dam2,String m2,String dm2,String cm2,String mm2){
 				this.km2=km2;
@@ -32,12 +35,14 @@ public class Superficie {
 				this.mm2=mm2;
 			}
 			
+			//This constructor allows to initialized the list liste_byte_unite and the method ajouterSuperficieUnites()
+			
 			public Superficie() {
 				liste_superficie_unites=new ArrayList<String>();
 				ajouterSuperficieUnites();
 			}
 		
-			//Getters & setters
+			//Getters & setters for all attributs
 			
 			public String getKm2() {
 				return km2;
@@ -103,7 +108,7 @@ public class Superficie {
 				this.liste_superficie_unites = liste_superficie_unites;
 			}
 		
-			//M�thode ajouter une unit� de la superficie dans la liste pour l'affichage
+		//Method to add some examples of units in type String in the list 
 			
 			public void ajouterSuperficieUnites(){
 				liste_superficie_unites.add("Km2");
@@ -115,7 +120,7 @@ public class Superficie {
 				liste_superficie_unites.add("Mm2");
 				}
 			
-			//M�thode afficher les unit�s de la superficie
+			//Method to print on screen all units added in the list
 			
 			public StringBuffer afficherUnitesSuperficie(){
 				StringBuffer type=new StringBuffer();
