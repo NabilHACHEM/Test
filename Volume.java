@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Volume class is a class which represents the Volume Data system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Volume {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-	
-			//Attributs	
+			//These attributs represent its units, they are private and in type String		
 			
 			private String m3;
 			private String dm3;
@@ -21,7 +21,7 @@ public class Volume {
 			private String ml;
 			private ArrayList<String> liste_volume_unite;
 			
-			//Constructeur
+			//This constructor allows to initialized all the attributs
 			
 			public Volume(String m3,String dm3, String cm3,String l,String dl,String cl,String ml){
 				this.m3=m3;
@@ -33,12 +33,13 @@ public class Volume {
 				this.ml=ml;
 			}
 		
+			//This constructor allows to initialized the list liste_volume_unite and the method ajouterVolumeUnite()	  
 			public Volume() {
 				liste_volume_unite=new ArrayList<String>();
 				ajouterVolumeUnite();
 			}
 			
-			//Getters & setters
+			//Getters & setters for all attributs
 			
 			public String getM3() {
 				return m3;
@@ -104,7 +105,7 @@ public class Volume {
 				this.liste_volume_unite = liste_volume_unite;
 			}
 		
-			//M�thode ajouter une unit� de la volume dans la liste pour l'affichage
+			//Method to add some examples of units in type String in the list 
 			
 			public void ajouterVolumeUnite(){
 				liste_volume_unite.add("m3");
@@ -116,7 +117,7 @@ public class Volume {
 				liste_volume_unite.add("ml");
 			}
 			
-			//M�thode afficher les unit�s de volume
+			//Method to print on screen all units added in the list 
 			
 			public StringBuffer afficherUnitesVolume(){
 				StringBuffer type=new StringBuffer();
