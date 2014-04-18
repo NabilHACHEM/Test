@@ -1,15 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Metrique class is a class which represents the Metrique system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Metrique {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-	//Attributs	
+	//These attributs represent its units, they are private and in type String		
 	
 	private String km;
 	private String hm;
@@ -20,7 +21,7 @@ public class Metrique {
 	private String mm;
 	private ArrayList<String> liste_metrique_unites;
 	
-	//Constructeurs
+	//This constructor allows to initialized the list liste_metrique_unites and the method ajouterUnitesMetrique
 
 	public Metrique() {
 			super();
@@ -28,6 +29,8 @@ public class Metrique {
 			ajouterUnitesMetrique();
 					  }
 
+	//This constructor allows to initialized all the attributs
+	
 	public Metrique (String km,String hm,String dam,String m,String dm,String cm,String mm){
 			this.km=km;
 			this.hm=hm;
@@ -38,7 +41,7 @@ public class Metrique {
 			this.mm=mm;
 					   }
 	
-	//Getters & setters
+	//Getters & setters for all attributs
 
 	public String getKm() {
 		return km;
@@ -105,7 +108,7 @@ public class Metrique {
 		this.liste_metrique_unites = liste;
 	}
 		
-	//M�thode ajouter une unit� de M�trique dans la liste pour l'affichage
+	//Method to add some examples of units in type String in the list
 	
 	public void ajouterUnitesMetrique(){
 		liste_metrique_unites.add("Km");
@@ -117,7 +120,7 @@ public class Metrique {
 		liste_metrique_unites.add("Mm");
 	}
 	
-	//M�thode afficher les unit�s de M�trique 
+	//Method to print on screen all units added in the list
 	
 	public StringBuffer afficherUnitesMetrique(){
 		StringBuffer type=new StringBuffer();
