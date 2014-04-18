@@ -92,7 +92,7 @@
   <scm>
     <connection>scm:svn:http://svn.wakaleo.com/hoteldatabase/</connection>
     <developerConnection>scm:svn:http://svn.wakaleo.com/hoteldatabase/</developerConnection>
-    <url>http://svn.wakaleo.com/viewcvs.cgi/hoteldatabase/</url>
+    <url>https://github.com/NabilHACHEM/Test/</url>
   </scm>
 
   <issueManagement>
