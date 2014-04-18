@@ -1,7 +1,6 @@
 Test is a maven project. The sources are organized in a typical maven2 structure
 
-To release without deploying the site
-> mvn release:clean release:prepare release:perform -Dgoals=deploy
-
-To deploy the site
-> mvn site site:deploy
+  * Every classes have a test classes
+  * This project contains a pom.xml
+  * This project contains site descriptor site.xml
+  * You can download by pressing Download ZIP on the right bottom 
