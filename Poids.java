@@ -1,15 +1,18 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+
+/**
+* The Poids class is a class which represents the weight system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Poids {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-	//Attributs	
+			
+	//These attributs represent its units, they are private and in type String	
 
 	private String tonne;
 	private String quintal;
@@ -22,7 +25,7 @@ public class Poids {
 	private String mg;
 	private ArrayList<String> liste_unites_poids;
 	
-	//Constructeur
+	//This constructor allows to initialized all the attributs
 	
 	public Poids (String tonne,String quintal,String kg,String hg,String dag,String g,String dg, String cg,String mg){
 		this.tonne=tonne;
@@ -36,12 +39,14 @@ public class Poids {
 		this.mg=mg;
 		}
 
+	//This constructor allows to initialized the list liste_unites_poids and the method ajouterUnitesPoids()
+
 	public Poids() {
 		 liste_unites_poids = new ArrayList<String>();
 		 ajouterUnitesPoids();
 	}
 
-	//Getters & setters
+	//Getters & setters for all attributs
 	
 	public String getKg() {
 		return kg;
@@ -123,7 +128,7 @@ public class Poids {
 		this.quintal = quintal;
 	}
 	
-	//M�thode ajouter une unit� de poids dans la liste pour l'affichage
+	//Method to add some examples of units in type String in the list 
 	
 	public void ajouterUnitesPoids(){
 		liste_unites_poids.add("Tonne");
@@ -137,7 +142,7 @@ public class Poids {
 		liste_unites_poids.add("Mg");
 	}
 	
-	//M�thode afficher les unit�s de Poids
+	//Method to print on screen all units added in the list
 
 	public StringBuffer afficherUnitesPoids(){
 		StringBuffer type=new StringBuffer();
