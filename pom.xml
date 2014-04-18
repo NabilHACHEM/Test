@@ -1,0 +1,122 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v400.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.miage</groupId>
+  <artifactId>TpUml</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Software for units conversion</name>
+  <url>http://maven.apache.org</url>
+  <description>This software allows to convert units of a system to another units of the same  system</description>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <version>3.0-beta-3</version>
+        <configuration>
+          <reportPlugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-project-info-reports-plugin</artifactId>
+              <version>2.0.1</version>
+            </plugin>
+          </reportPlugins>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <developers>
+    <developer>
+      <id>Nabil</id>
+      <name>Nabil HACHEM ABDALLAH</name>
+      <email>nabilhachemabdallah@gmail.com</email>
+      <roles>
+        <role>Developper</role>
+      </roles>
+      <organization>fr.miage</organization>
+    </developer>
+    <developer>
+      <id>Abdirahman</id>
+      <name>Abdirahman Elmi Samod</name>
+      <email>elmisamod@gmail.com</email>
+      <roles>
+        <role>Conceptor</role>
+      </roles>
+      <organization>fr.miage</organization>
+    </developer>
+  </developers>
+
+  <mailingLists>
+    <mailingList>
+      <name>Software for units conversion</name>
+      <subscribe>dev-subscribe@wakaleo.com</subscribe>
+      <unsubscribe>dev-unsubscribe@wakaleo.com</unsubscribe>
+      <post>dev@wakaleo.com</post>
+      <archive>http://mail-archives.wakaleo.com/modmbox/dev/</archive>
+    </mailingList>
+  </mailingLists>
+
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <ciManagement>
+    <system>Continuum</system>
+    <url>http://integrationserver.wakaleo.com/continuum</url>
+    <notifiers>
+      <notifier>
+        <type>mail</type>
+        <address>duke@wakaleo.com</address>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+
+  <scm>
+    <connection>scm:svn:http://svn.wakaleo.com/hoteldatabase/</connection>
+    <developerConnection>scm:svn:http://svn.wakaleo.com/hoteldatabase/</developerConnection>
+    <url>http://svn.wakaleo.com/viewcvs.cgi/hoteldatabase/</url>
+  </scm>
+
+  <issueManagement>
+    <system>Bugzilla</system>
+    <url>https://bugzilla.wakaleo.com/</url>
+  </issueManagement>
+  
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven−pmd−plugin</artifactId>
+             <version>2.3</version>
+          <configuration>
+            <linkXref>true</linkXref>
+              <sourceEncoding>utf−8</sourceEncoding>
+              <minimumTokens>100</minimumTokens>
+                <targetJdk>1.5</targetJdk>
+                <rulesets>
+                  <ruleset>/rulesets/sunsecure.xml</ruleset>
+                  <ruleset>/rulesets/naming.xml</ruleset>
+                </rulesets> 
+           </configuration>
+         </plugin>
+     </plugins>
+   </reporting>
+ </project>
