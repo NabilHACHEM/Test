@@ -1,4 +1,4 @@
-ublic class Conversion {
+public class Conversion {
 			
 				/**
 				   @author Nabil HACHEM
