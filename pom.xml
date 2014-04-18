@@ -61,6 +61,11 @@
     </developer>
   </developers>
 
+ <ciManagement>
+  <system>Junit</system>
+  <url>http://www.junit.com/</url>
+ </ciManagement>
+
 <contributors>
     <contributor>
       <name>Nabil HACHEM ABDALLAH</name>
@@ -115,6 +120,9 @@
                 <rulesets>
                   <ruleset>/rulesets/sunsecure.xml</ruleset>
                   <ruleset>/rulesets/naming.xml</ruleset>
+		  <ruleset>/rulesets/java/braces.xml</ruleset>
+		  <ruleset>/rulesets/java/coupling.xml</ruleset>
+		  <ruleset>/rulesets/java/unused-code.xml</ruleset>
                 </rulesets> 
            </configuration>
          </plugin>
