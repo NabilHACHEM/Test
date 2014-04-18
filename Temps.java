@@ -1,12 +1,17 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+/**
+* The Temps class is a class which represents the Time system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Temps {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
 	
-	//Attributs
+	//These attributs represent its units, they are private and in type String
 	
 	private String annee;
 	private String mois;
@@ -20,9 +25,8 @@ public class Temps {
 	private String nanosecondes;
 	private ArrayList<String> liste_temps_unites;
 	
-	//Constructeur
-	
-	
+	//This constructor allows to initialized all the attributs
+
 	public Temps(String annee,String mois,String semaine,String jour,String heure,String minute,String secondes,String millisecondes,String microsecondes,String nanosecondes){
 		this.annee=annee;
 		this.mois=mois;
@@ -36,7 +40,7 @@ public class Temps {
 		this.nanosecondes=nanosecondes;
 	}
 
-	//Getters & setters
+	//This constructor allows to initialized the list liste_temps_unites and the method ajouterTempsUnites()
 	
 	public Temps() {
 		liste_temps_unites = new ArrayList<String>();
@@ -44,6 +48,8 @@ public class Temps {
 		
 	}
 
+	//Getters & setters for all attributs
+		
 	public String getHeure() {
 		return heure;
 	}
@@ -132,7 +138,7 @@ public class Temps {
 		this.liste_temps_unites = liste_temps_unites;
 	}
 	
-	//M�thode ajouter une unit� du temps dans la liste pour l'affichage
+	//Method to add some examples of units in type String in the list 
 	
 	public void ajouterTempsUnites(){
 		liste_temps_unites.add("Annee");
@@ -140,14 +146,14 @@ public class Temps {
 		liste_temps_unites.add("Semaine");
 		liste_temps_unites.add("Jour");
 		liste_temps_unites.add("Heure");
-		liste_temps_unites.add("Mnute");
+		liste_temps_unites.add("Minute");
 		liste_temps_unites.add("Seconde");
 		liste_temps_unites.add("Milliseconde");
 		liste_temps_unites.add("Microseconde");
 		liste_temps_unites.add("Nanoseconde");
 	}
 	
-	//M�thode afficher les unit�s du temps
+	//Method to print on screen all units added in the list
 	
 	public StringBuffer afficherUnitesTemps(){
 		StringBuffer type=new StringBuffer();
