@@ -1,15 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+* The Finance class is a class which represents the Financial system 
+* @author Nabil HACHEM
+* @version 2.0
+* @since 2014-04-18
+*/
+
 public class Finance {
 	
-				/**
-				   @author Nabil HACHEM
-				   @version 2.0
-			           @since 2014-04-18
-				  */
-	
-	//Attributs	
+	//These attributs represent its units, they are private and in type String 	
 	
 	private String euro;
 	private String dollar;
@@ -17,13 +18,15 @@ public class Finance {
 	private String yen;
 	private ArrayList<String> liste_finance_unites;
 	
-	//Constructeurs
+	//This constructor allows to initialized the list liste_finance_unites and the method ajouterFinanceUnites
 	
 	public Finance() {
 		super();
 		liste_finance_unites = new ArrayList<String>();
 		 ajouterFinanceUnites();
 	}
+
+	//This constructor allows to initialized all the attributs
 
 	public Finance(String euro, String dollar, String pound,String yen){
 		this.euro=euro;
@@ -32,7 +35,7 @@ public class Finance {
 		this.yen=yen;
 			}
 	
-	//Getters & setters
+	//Getters & setters for all attributs
 
 	public String getEuro() {
 		return euro;
@@ -74,7 +77,7 @@ public class Finance {
 		this.liste_finance_unites = liste_finance_unites;
 	}
 	
-	//M�thode ajouter une unit� de Finance dans la liste pour l'affichage
+	//Method to add some examples of units in type String in the list
 	
 	public void ajouterFinanceUnites(){
 		liste_finance_unites.add("Euro");
@@ -83,7 +86,7 @@ public class Finance {
 		liste_finance_unites.add("Yen");
 		}
 	
-	//M�thode afficher les unit�s de Finance 
+	//Method to print on screen all units added in the list 
 	
 	public StringBuffer afficherUnitesFinane(){
 		StringBuffer type=new StringBuffer();
