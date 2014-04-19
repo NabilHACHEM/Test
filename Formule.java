@@ -432,7 +432,15 @@ public class Formule {
 			   				val=val/1000;
 			   				System.out.print(val);
 			   				return val; 
-				   		}	
+				   		}
+				   		
+				   		if(unite_depart==t.getHeure() && unite_arrivee==t.getJour())
+			   		{
+				 
+		   				val=val*0.0416;
+		   				System.out.print(val);
+		   				return val; 
+			   		}
 					 
 			   		if(unite_depart==t.getHeure() && unite_arrivee==t.getSemaine())
 				   		{
