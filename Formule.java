@@ -293,7 +293,16 @@ public class Formule {
 			   				val=Math.round(val*taux_echange);
 			   				System.out.print(val);
 							return val;
-			   			}  
+			   			} 
+			   		
+			   		if(unite_depart==fin.getEuro() && unite_arrivee==fin.getMarocainDirham())
+			   			{
+			   				taux_echange=11.2230;
+			   				val=Math.round(val*taux_echange);
+			   				System.out.print(val);
+							return val;
+			   			} 	
+			   			
 			   			
 			   		if(unite_depart==fin.getEuro() && unite_arrivee==fin.getYen())
 			   			{
@@ -323,6 +332,17 @@ public class Formule {
 			   				System.out.print(val);
 			   				return val;
 			   			} 
+			   			
+			   		
+			   		if(unite_depart==fin.getDollar() && unite_arrivee==fin.getMarocainDirham())
+			   			{
+			   				taux_echange=8.1185;
+			   				val=Math.round(val*taux_echange);
+			   				System.out.print(val);
+			   				return val;
+			   			}
+			   			
+			   			
 			   
 			   		if(unite_depart==fin.getDollar() && unite_arrivee==fin.getYen())
 			   			{
@@ -351,7 +371,16 @@ public class Formule {
 			   				val=Math.round(val*taux_echange);
 			   				System.out.print(val);
 			   				return val; 
-				   		}  
+				   		} 
+				   		
+				   	
+			   		if(unite_depart==fin.getPound() && unite_arrivee==fin.getMarocainDirham())
+			   			{
+			   				taux_echange=13.6460;
+			   				val=Math.round(val*taux_echange);
+			   				System.out.print(val);
+			   				return val;
+			   			}
 					 
 					if(unite_depart==fin.getPound() && unite_arrivee==fin.getYen())
 			   			{
@@ -382,17 +411,64 @@ public class Formule {
 							System.out.print(val);
 							return val; 
 				   		}  
+				   		
+				   	
+					if(unite_depart==fin.getYen () && unite_arrivee==fin.getMarocainDirham())
+				   		{
+							taux_echange=102.80;
+							val=Math.round(val*taux_echange);
+							System.out.print(val);
+							return val; 
+				   		}
 					 
 					 
 					if(unite_depart==fin.getYen() && unite_arrivee==fin.getPound())
 			   			{
-			   				taux_echange=171.11;
+			   				taux_echange=0.0792;
 			   				val=Math.round(val*taux_echange);
 			   				System.out.print(val);
 						}  
 			   				return val;
 			     }
 		   
+		   //Method allows to compare marocainDirham and then convert with other currencies
+		   
+		   public static double marocainDirham(String unite_depart, String unite_arrivee, double val){
+		   	double taux_echange=0;
+					if(unite_depart==fin.getMarocainDirham() && unite_arrivee==fin.getEuro())
+						{
+							taux_echange=0.0891;
+							val=Math.round(val*taux_echange);
+							System.out.print(val);
+							return val;
+						}  
+			
+					if(unite_depart==fin.getMarocainDirham () && unite_arrivee==fin.getDollar())
+				   		{
+							taux_echange=0.1232;
+							val=Math.round(val*taux_echange);
+							System.out.print(val);
+							return val; 
+				   		}  
+				   		
+				   	
+					if(unite_depart==fin.getMarocainDirham () && unite_arrivee==fin.getYen())
+				   		{
+							taux_echange=12.6193;
+							val=Math.round(val*taux_echange);
+							System.out.print(val);
+							return val; 
+				   		}
+					 
+					 
+					if(unite_depart==fin.getMarocainDirham() && unite_arrivee==fin.getPound())
+			   			{
+			   				taux_echange=0.0734;
+			   				val=Math.round(val*taux_echange);
+			   				System.out.print(val);
+						}  
+			   			
+		   } 
 		   		//Method allows to compare hours and then convert with unit of time
 		   		
 		   public static double heure(String unite_depart, String unite_arrivee, double val){
