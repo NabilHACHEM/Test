@@ -16,6 +16,7 @@ public class Finance {
 	private String dollar;
 	private String pound;
 	private String yen;
+	private String marocainDirham;
 	private ArrayList<String> liste_finance_unites;
 	
 	//This constructor allows to initialized the list liste_finance_unites and the method ajouterFinanceUnites
@@ -28,11 +29,12 @@ public class Finance {
 
 	//This constructor allows to initialized all the attributs
 
-	public Finance(String euro, String dollar, String pound,String yen){
+	public Finance(String euro, String dollar, String pound,String yen, String marocainDirham){
 		this.euro=euro;
 		this.dollar=dollar;
 		this.pound=pound;
 		this.yen=yen;
+		this.marocainDirham=marocainDirham;
 			}
 	
 	//Getters & setters for all attributs
@@ -69,6 +71,14 @@ public class Finance {
 		this.yen = yen;
 	}
 	
+	public String getMarocainDirham() {
+		return marocainDirham;
+	}
+
+	public void setMarocainDirham(String marocainDirham) {
+		this.marocainDirham = marocainDirham;
+	}
+	
 	public ArrayList<String> getListe_finance_unites() {
 		return liste_finance_unites;
 	}
@@ -84,6 +94,7 @@ public class Finance {
 		liste_finance_unites.add("Dollar");
 		liste_finance_unites.add("Pound");
 		liste_finance_unites.add("Yen");
+		liste_finance_unites.add("MarocainDirham");
 		}
 	
 	//Method to print on screen all units added in the list 
